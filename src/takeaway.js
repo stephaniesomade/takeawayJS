@@ -16,9 +16,6 @@ class Order {
   constructor() {
     this.currentOrder = {}
   }
-  currentOrder() {
-    return this.currentOrder
-  }
   add(item, price){
     this.currentOrder[item] = price
   }
