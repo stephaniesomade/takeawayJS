@@ -69,7 +69,7 @@ class Order {
       return element.Margarita;
     });
     this.currentOrder.splice(index, 1);
-    this.Margarita -= 1;
+    this.Margarita -= 1
     }
   }
   deletePepperoni() {

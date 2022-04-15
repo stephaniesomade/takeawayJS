@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('#delete-margarita').addEventListener('click',() => {
   order.deleteMargarita();
   totalPrice();
-  document.querySelector('#margarita-orders').innerText = order.Pepperoni;
+  document.querySelector('#margarita-orders').innerText = order.Margarita;
   });
 
   document.querySelector('#add-hawaiian').addEventListener('click', () => {
