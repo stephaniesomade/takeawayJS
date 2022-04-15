@@ -8,20 +8,28 @@
     <h1>The Menu</h1>
     <section>
       <h2>Pepperoni: £10</h2>
-      <button>+</button>
-      <button>-</button>
+      <button id="add-pepperoni">+</button>
+        <p id="pepperoni-orders"><p>
+          <button id="delete-pepperoni">-</button>
       <h2>Margarita: £9</h2>
-      <button>+</button>
-      <button>-</button>
+      <button id="add-margarita">+</button>
+      <p id="margarita-orders"><p>
+      <button id="delete-margarita">-</button>
       <h2>Hawaiian: £11</h2>
-      <button>+</button>
-      <button>-</button> 
+      <button id="add-hawaiian">+</button>
+      <p id="hawaiian-orders"><p>
+      <button id="delete-hawaiian">-</button>
       </section>
       <div>
-        Total Price:<span></span>
+        Total Price: £<span id="total">0</span>
         </div>
-        <button>Click here to confirm Order</button>
+        <button id="order-button">Click here to confirm Order</button>
+        <h3 id="title"></h3>
+        <p id="confirmation"></p>
+        <p id="bill"></p>
     <script src="src/takeaway.js"></script>
-   <!-- <script src="src/interface.js"></script> -->
+    <script src="src/interface.js"></script>
   </body>
 </html>
+
+<!-- To make the orer appear set the show reciept function equal to variable and set that equal to inner text.  -->
