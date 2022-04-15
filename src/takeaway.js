@@ -41,16 +41,16 @@ class Order {
   }
   add(item, price){
     let obj = {};
-      obj[item]= price
+      obj[item]= price;
       this.currentOrder.push(obj);
-    }
+  }
   showReceipt() {
     let array = [];
     this.currentOrder.forEach(meal => {
       for(let key in meal) {
-        array.push(`${key}: £${meal[key]}.`)
+        array.push(`${key}: £${meal[key]}.`);
       }
-    })
+    });
     return array.join(" ")
   }
   totalPrice() {
@@ -58,20 +58,19 @@ class Order {
     this.currentOrder.forEach(meal => {
       for(let key in meal) {
         let num = meal[key]
-        price = num + price
+        price = num + price;
       }
-    })
+    });
     return price.toFixed(2)
   }
   deleteMargarita() {
     if (this.currentOrder.some(element => element.Margarita)) {
     const index = this.currentOrder.findIndex(element => {
-      return element.Margarita
+      return element.Margarita;
     });
-    this.currentOrder.splice(index, 1)
-    this.Margarita -= 1
-
-  }
+    this.currentOrder.splice(index, 1);
+    this.Margarita -= 1;
+    }
   }
   deletePepperoni() {
     if (this.currentOrder.some(element => element.Pepperoni)){
@@ -80,23 +79,15 @@ class Order {
     });
     this.currentOrder.splice(index, 1)
     this.Pepperoni -= 1
+    }
   }
-}
   deleteHawaiian() {
     if (this.currentOrder.some(element => element.Hawaiian)) {
-  const index = this.currentOrder.findIndex(element => {
-    return element.Hawaiian
-  });
-  this.currentOrder.splice(index, 1)
-  this.Hawaiian -= 1
+    const index = this.currentOrder.findIndex(element => {
+      return element.Hawaiian
+    });
+    this.currentOrder.splice(index, 1)
+    this.Hawaiian -= 1
+    }
   }
-}
 };
-let menu = new Menu();
-let order = new Order();
-menu.selectPepperoni(order);
-menu.selectHawaiian(order);
-menu.selectMargarita(order)
-console.log(order.currentOrder)
-order.deleteMargarita();
-console.log(order.Hawaiian)

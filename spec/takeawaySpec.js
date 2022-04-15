@@ -48,7 +48,7 @@ describe('Menu', () => {
     menu.selectMargarita(order);
     menu.selectHawaiian(order);
     expect(order.totalPrice()).toEqual("40.00")
-  })
+  });
   
   it('removes unwanted items from the current order', () => {
     menu.selectPepperoni(order);
@@ -59,7 +59,7 @@ describe('Menu', () => {
     expect(order.showReceipt()).toEqual("Pepperoni: £10. Pepperoni: £10. Hawaiian: £11.")
     expect(order.currentOrder).toEqual([{"Pepperoni": 10}, {"Pepperoni": 10}, {"Hawaiian": 11}])
     expect(order.totalPrice()).toEqual("31.00")
-  })
+  });
 
   it('removes unwanted items from the current order', () => {
     menu.selectPepperoni(order);
@@ -70,5 +70,5 @@ describe('Menu', () => {
     expect(order.currentOrder).toEqual([{"Pepperoni": 10}, {"Pepperoni": 10}, {"Hawaiian": 11}])
     expect(order.totalPrice()).toEqual("31.00")
     expect(order.Margarita).toEqual(0)
-  })
+  });
 });
