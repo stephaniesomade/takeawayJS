@@ -2,31 +2,35 @@
 <html>
   <head>
     <link href="public/styles.css" rel="stylesheet">
-    <title>The Menu</title>
+    <title>Pizzeria</title>
   </head>
   <body>
-    <h1>The Menu</h1>
+    <h1>À LA CARTE</h1>
     <section>
       <h2>Pepperoni: £10</h2>
-      <button id="add-pepperoni">+</button>
-        <p id="pepperoni-orders">0<p>
-          <button id="delete-pepperoni">-</button>
+        <div class="container"><button id="add-pepperoni">+</button>
+          <p id="pepperoni-orders">0<p>
+            <div class="container"><button id="delete-pepperoni">-</button></p></div></div>
       <h2>Margarita: £9</h2>
-      <button id="add-margarita">+</button>
-      <p id="margarita-orders">0<p>
-      <button id="delete-margarita">-</button>
+        <div class="container"><button id="add-margarita">+</button>
+          <p id="margarita-orders">0<p>
+            <div class="container"><button id="delete-margarita">-</button></div></div>
       <h2>Hawaiian: £11</h2>
-      <button id="add-hawaiian">+</button>
-      <p id="hawaiian-orders">0<p>
-      <button id="delete-hawaiian">-</button>
+        <div class="container"><button id="add-hawaiian">+</button>
+          <p id="hawaiian-orders">0<p>
+            <div class="container"><button id="delete-hawaiian">-</button></div>
       </section>
-      <div>
+      <br>
+      <div class="pink-text normal">
         Total Price: £<span id="total">0</span>
+        <br>
+        <br>
         </div>
-        <button id="order-button">Click here to confirm Order</button>
-        <h3 id="title"></h3>
-        <p id="confirmation"></p>
-        <p id="bill"></p>
+        <div class="container">
+        <button id="order-button" class="container">Click here to confirm Order</button></div>
+        <h3 class="container" id="title"></h3>
+        <h3 id="confirmation"></h3>
+        <p class="pink-text normal" id="bill"></p>
     <script src="src/takeaway.js"></script>
     <script src="src/interface.js"></script>
   </body>
